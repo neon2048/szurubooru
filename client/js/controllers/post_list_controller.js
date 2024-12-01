@@ -48,6 +48,7 @@ class PostListController {
             bulkEdit: {
                 tags: this._bulkEditTags,
             },
+            allowUnsafeToggle: api.hasPrivilege("custom:allowunsafe"),
         });
         this._headerView.addEventListener("navigate", (e) =>
             this._evtNavigate(e)
